@@ -1,0 +1,24 @@
+﻿@page
+@model MVCWithRazor.Pages.Department.IndexModel
+@{
+}
+
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var x in Model.Departments)
+        {
+            <tr>
+                <td>@x.Id</td>
+                <td>@x.Name</td>
+            </tr>
+        }
+
+    </tbody>
+</table>
